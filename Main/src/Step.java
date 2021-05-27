@@ -26,6 +26,7 @@ public class Step implements Comparator<Step> {
         this.stepNumber = stepNumber;
     }
 
+
     public int getStepNumber() {
         return stepNumber;
     }
