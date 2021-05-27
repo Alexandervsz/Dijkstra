@@ -10,14 +10,12 @@ public class Trip implements Comparable {
     private final Set<Step> processedSteps;
     private final PriorityQueue<Step> stepQueue;
     private List<List<Step>> steplist;
-    List<Integer> pathList;
 
     public Trip(int numberOfSteps, int destination) {
         this.numberOfSteps = numberOfSteps;
         this.destination = destination;
         path = new Step[numberOfSteps];
         processedSteps = new HashSet<>();
-        pathList = new ArrayList<>();
         stepQueue = new PriorityQueue<>(numberOfSteps, new Step());
     }
 
